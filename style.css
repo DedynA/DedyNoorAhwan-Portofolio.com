@@ -98,6 +98,7 @@ body {
 }
 
 .contentBox h4 {
+    text-align: left;
     color: var(--color7);
     font-size: 1.2rem;
     margin-bottom: 0.4rem;
@@ -126,11 +127,14 @@ body {
 }
 
 h5 {
+    text-align: left;
     font-size: 0.9rem;
     margin-top: 1rem;
     margin-bottom: 0.3rem;
 }
-
+p{
+    text-align: left;
+}
 .left p {
     font-size: 0.8rem;
     display: inline;
