@@ -101,7 +101,8 @@ body {
     text-align: left;
     color: var(--color7);
     font-size: 1.2rem;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.3rem;
+    margin-top: 1rem;
 }
 
 .left {
@@ -109,6 +110,7 @@ body {
 }
 
 .right {
+    text-align: left;
     width: 45%;
 }
 
@@ -129,18 +131,15 @@ body {
 h5 {
     text-align: left;
     font-size: 0.9rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-bottom: 0.3rem;
 }
-p{
-    text-align: left;
-}
+
 .left p {
     font-size: 0.8rem;
     display: inline;
     color: var(--color2);
 }
-
 
 .right p {
     font-size: 12px;
@@ -152,28 +151,23 @@ p{
 }
 
 
-@media (max-width: 800px) {
-    #portofolio {
-        margin: auto;
-        border-radius: 0;
-    }
+.right p1, 
+.right p2{
+    text-align: center;
+    font-size: 12px;
+    display: inline;
+    color: var(--color2);
 }
 
-@media (max-width: 600px) {
+.right a {
+    width: 6px;
+    height: 6px;
+    color: #faca22;
+    transition: all 0.5;
+}
 
-    .parent,
-    .contentBox {
-        flex-direction: column;
-    }
-
-    .left,
-    .right {
-        width: 100%;
-    }
-
-    .contentBox .line {
-        display: none;
-    }
+.right a:hover {
+    color: var(--color6);
 }
 
 .container {
@@ -268,50 +262,41 @@ p{
     gap: 10px;
 }
 
-.container1 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.8rem;
-    background: none;
-    padding: 0.2rem;
+span1 {
+    font-size: 1rem;
+    color: aquamarine;
 }
 
-.container1 a {
-    position: relative;
-    background: var(--color6);
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 0.6rem;
-    letter-spacing: 0.1rem;
-    padding: 0.4rem 0.8rem;
-    transition: 0.5s;
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+    #portofolio {
+        margin: auto;
+        border-radius: 0;
+    }
 }
 
-.container1 a:hover {
-    letter-spacing: 0.13rem;
-    background: var(--color);
-    color: var(--color);
-    box-shadow: 0 0 5px var(--color);
-}
+@media (max-width: 600px) {
 
-.container1 a::before {
-    content: '';
-    position: absolute;
-    inset: 2px;
-    background: var(--color3);
-}
+    .parent,
+    .contentBox {
+        flex-direction: column;
+    }
 
-.container1 a span {
-    position: relative;
-    z-index: 1;
-}
+    .left,
+    .right {
+        width: 100%;
+    }
 
-.container1 a i {
-    position: absolute;
-    inset: 0;
-    display: block;
+    .contentBox .line {
+        display: none;
+    }
 }
